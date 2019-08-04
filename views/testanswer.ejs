@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>testanswer</title>
+    <style>
+    
+
+    @media only screen and (min-width: 300px) {
+  body {
+     background-color: ;   
+  }
+}
+    #a{
+    width: 70%;
+    height: 45px;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 5px;
+
+    }
+
+    #b{
+    width: 13%;
+    height: 50px;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    display: inline-block;
+    min-width: 80px;
+   
+    }
+
+
+.container{
+    text-align: center;
+    border-style: solid green;    
+}
+
+h1{
+    color: green;
+}
+
+h2{
+    color:black;
+}
+
+    </style>
+</head>
+<body>
+    <form action="/testanswersubmit" class="container" method="post" >
+        <h1>ITY Software Test Series</h1></br>
+           <% for(var i=0; i < test_data.length; i++) { %>
+           <h2><%= test_data[i].question%></h2>
+           <input type="text" name="answer" id="a" required>
+           <% } %>
+           </br></br></br></br>
+           <button type="submit" id="b">submit</button>
+       </form>    
+</body>
+</html>

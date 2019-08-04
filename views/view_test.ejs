@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/view_test.css">
+    <title>Responsive Design | Welcome</title>
+    <h1>Admin page to upload Test questions</h1>
+</head>
+<body> 
+<h1>Present Test data</h1>
+<table  align="center" width="90%" border="1">
+    <tr style="color: green;">
+        <th>Id</th>
+        <th>Question</th>
+        <th>Subject</th>
+        <th>Class</th>
+        <th>Answer</th>
+    </tr>
+    <% for(var i=0; i < test_data.length; i++) { %>
+        <tr>
+                <td><%= test_data[i].id%></td>
+                <td><%= test_data[i].question%></td>
+                <td><%= test_data[i].subject%></td>
+                <td><%= test_data[i].select_class%></td>
+                <td><%= test_data[i].answer%></td>  
+        </tr>
+    <% } %>
+</table>
+
+
+    <form action="/admin/view_test/add" class="container" method="post">
+        <h1>Add Test data</h1>
+    <input type="text" name="question" id="a" placeholder="question"></br></br>
+    <input type="text" name="subject" id="a" placeholder="subject"></br></br>
+    <input type="text" name="select_class" id="a"placeholder="class"></br></br>
+    <input type="text" name="answer" id="a"placeholder="answer"></br></br></br>
+    <button type="upload" id="b">Upload</button>
+    </form></br></br>
+
+   
+        <form action="/admin/view_test/delete" method="POST" style="text-align: center;">
+            <h1>Delete Test data</h1>
+            <input type="text" placeholder="enter the question id" name="id" id="c">
+            <button style="background: green;" id="c">Delete Question</button>
+        </form>
+
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>test</title>
+    <style>
+
+
+       
+h1{
+        text-align: center;
+        color: green;
+        margin-top: 40px;
+    }
+    .container{
+        text-align: center;
+        min-width: 200px;
+        margin: auto;
+
+    }
+
+    select {
+        width: 15%;
+        height: 35px;
+        margin-top: 20px;
+        background-color: white;
+    }    
+    #b{
+    width: 20%;
+    height: 40px;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: green;
+    color:white;
+    min-width: 80px;
+}
+    h4{
+        color: green;
+    }
+
+    </style>
+</head>
+<body>
+       
+    
+    <div class="container">
+            <h1>IIy software Test Series</h1></br></br>
+        <form action="/teststart" method="POST">
+            <select name="subject" id="subject" placeholder="select_subject" style="color: green">
+                    <option value="computer">computer</option>
+                    <option value="maths">maths</option>
+                    <option value="english">english</option>
+                    <option value="Gk">Gk</option>
+                    <option value="Science">Science</option>
+                   </select>
+                   
+                   <select name="select_class" id="" placeholder="select_class" style="color: green">
+                    <option value="Class I">class I</option>
+                    <option value="Class II">Class II</option>
+                    <option value="Class III">Class III</option>
+                    <option value="Class IV">Class IV</option>
+                    <option value="Class V">Class V</option>
+                    <option value="Class VI">Class VI</option>
+                    <option value="Class VII">Class VII</option>
+                    <option value="Class VIII">Class VIII</option>
+                   </select>
+      <button type="submit" id="b" >Start Test</button></br>
+      <h4><%= temp %></h4>
+        </form>
+    </div>
+</body>
+</html>

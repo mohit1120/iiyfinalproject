@@ -1,0 +1,350 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    background:#1f1f1f;
+    color: white;
+    
+}
+/* global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* header */
+header {
+    background: black;
+    color: white;
+    padding-top: 20px;
+    /* min-height: 50px; */
+    border-bottom: green 3px solid;
+}
+
+header a {
+    padding: 0;
+    padding-top: 5px;
+    color: white;
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+}
+
+header .highlight{
+    color: green;
+}
+
+header nav a{
+    transition: 0.4s;
+}
+
+header nav a:hover{
+    background-color: green;
+    color: black;
+    padding: 5px 8px;
+    border-radius: 5px;
+    
+}
+
+/* showcase */
+#showcase h1{
+    font-size: 50px;
+    padding-top: 40px;
+    color: white;
+}
+#showcase p{
+    color:green;
+    font-size: 20px
+}
+#showcase{
+    
+    background: #1f1f1f;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* boxes */
+.features h2{
+    color: white;
+    padding: 5px;
+}
+#boxes{
+    background: green;
+    border-radius: 10px;
+    margin:20px;
+    opacity: .9;
+}
+
+#boxes .box{
+    float: left;
+    width: 20%;
+    text-align: center;
+    color:white;
+    padding: 20px;
+}
+#box .box h3,p{
+    padding-top: 0px;
+}
+#boxes .box img{
+    width: 80%;
+}
+
+.features{
+    color: #1f1f1f;
+    font-size: 20px;
+    text-align: center;
+}
+footer{
+    padding: 2px;
+    background: black;
+    text-align: center;
+
+
+}
+@media(max-width: 1024px){
+    header #branding,
+    header nav,
+    header nav li
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 10px;
+    }
+    #showcase h1{
+        padding-top: 1px;
+        font-size: 30px;
+        margin-top: 80px;
+        
+    }
+    #showcase p{
+        font-size: 17px;
+    }
+    #showcase{
+        min-height: 200px;
+    }
+    #boxes .box{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    #boxes .box img{
+        width: 200px;
+    }
+
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: rgba(22,22,22,0.5);
+    position: fixed;
+    
+    
+
+}
+
+.modal-content{
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+
+}
+.modal-content img{
+    height: 25%;
+}
+.modal-content .close{
+    top: 0;
+    color: black;
+    position: absolute;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+
+input{
+    padding: 3px;
+    width: 60%;
+    height: 25px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
+    border: 1px solid green;;
+}
+select{
+    display: inline;
+    margin: 1px auto;
+    border-radius: 4px;
+    border: 1px solid green;
+    width: 25%;
+    background:white;
+    height: 30px;
+    
+}
+.button{
+    width: 19%;
+    margin: 0 auto;
+    display: block;
+    background-color: #33B8FF;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+        
+}
+option{
+    background: white;
+}
+.heading{
+    color: #1f1f1f;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bolder;
+}
+.register{
+    color:#1f1f1f;
+    padding: 3px;
+    text-decoration: none;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+}
+.login{
+    color:#1f1f1f;
+    padding: 3px;
+    text-decoration: none;
+}
+.register:hover{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+
+}
+.login:hover{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+
+}
+.register2{
+    color:#1f1f1f;
+    padding: 3px;
+    text-decoration: none;
+    
+}
+.login2{
+    color:#1f1f1f;
+    padding: 3px;
+    text-decoration: none;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+}
+.register2:hover{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+
+}
+.login2:hover{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+
+}
+/* .login:active{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+}
+.register:active{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+} */
+.modal2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22,22,22,.1);
+    position: fixed;
+    
+    
+
+}
+.modal-content2 input{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.modal-content2{
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+
+}
+.modal-content2 img{
+    height: 25%;
+}
+.modal-content2 .close2{
+    top: 0;
+    color: black;
+    position: absolute;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-decoration: none;
+}
+.login-btn{
+    margin-top:30px;
+}

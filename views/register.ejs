@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/stylesreg.css">
+  </head>
+  <body>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+<div class="container">
+     <form action="/register" method="post">
+      
+      <img src="img/circled-user-male-skin-type-1-2.png" alt=""></br>
+      <h4><%= msg %></h4>
+      <select  name="select_class" id="select_class" required>
+        <option value="Select Class">Select Class</option>
+        <option value="Class I">Class I</option>
+        <option value="Class II">Class II</option>
+        <option value="Class III">Class III</option>
+        <option value="Class IV">Class IV</option>
+        <option value="Class IV">Class V</option>
+        <option value="Class IV">Class VI</option>
+        <option value="Class IV">Class VII</option>
+        <option value="Class IV">Class VIII</option>
+    </select>
+
+    
+      <h4>Name</h4>
+<input type="text" name="name" required placeholder="name">
+      <h4>Mobile</h4>
+<input type="text" name="mobile" required maxlength="10" minlength="10" placeholder="number">
+       <h4>Password</h4>
+<input type="password" name="password" required placeholder="password"  minlength="6">
+      <button type="submit">Register</button>
+     
+    </form>
+
+</div>
+
+  </body>
+</html>

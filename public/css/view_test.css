@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    margin-top: 40px; 
+    color: green;
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+    margin-top: 80px;
+    border-style: solid green;    
+}
+
+
+
+#a{
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 5px;
+    }
+
+#b{
+    width: 13%;
+    height: 55px;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    display: inline-block;
+    min-width: 80px;
+}
+
+#c{
+width: 14%;
+height: 50px;
+padding: 5px;
+border: 2px solid green;
+border-radius: 5px;
+min-width: 110px;
+}
